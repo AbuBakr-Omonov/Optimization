@@ -14,6 +14,9 @@ function Header() {
           <NavLink to="/product" className={"navLinkStyle text-white px-4 py-2 hover:text-gray-400 transition duration-200"}>
             Product
           </NavLink>
+          <NavLink to="/wishlist" className={"navLinkStyle text-white px-4 py-2 hover:text-gray-400 transition duration-200"}>
+            wishlist
+          </NavLink>
         </div>
       </nav>
     </header>

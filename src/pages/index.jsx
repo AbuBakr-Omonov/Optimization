@@ -7,6 +7,7 @@ const Users = lazy(() => import("./Users/Users"))
 const NotFaund = lazy(() => import("./NotFaund/NotFaund"))
 const ProductDetail = lazy(() => import("./product-deatil/ProductDetail"))
 const UserDeatail = lazy(() => import("./user-deatil/UserDeatail"))
+const Wishlist = lazy(() => import("./wishlists/Wishlists"))
 const MainRouters = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const MainRouters = () => {
           <Route path="*" element={<Suspense><NotFaund/></Suspense>}/>
           <Route path="/product/:id" element={<Suspense><ProductDetail/></Suspense>}/>
           <Route path="/user/:id" element={<Suspense><UserDeatail/></Suspense>}/>
+          <Route path="wishlist" element={<Suspense><Wishlist/></Suspense>}/>
         </Route>
     </Routes>
     </>
